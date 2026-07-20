@@ -83,7 +83,7 @@ services:
       - ./Notification_Service/Notification:/app
 
   zookeeper:
-    image: 'bitnami/zookeeper:3.9'
+    image: 'soldevelo/zookeeper:3.9'
     container_name: zookeeper
     ports:
       - '2181:2181'
@@ -94,7 +94,7 @@ services:
       - zookeeper_data:/bitnami/zookeeper
 
   kafka:
-    image: 'bitnami/kafka:3.9'
+    image: 'soldevelo/kafka:3.9'
     container_name: kafka
     ports:
       - '9092:9092'

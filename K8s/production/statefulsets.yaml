@@ -251,7 +251,7 @@ spec:
         fsGroup: 1001
       containers:
       - name: zookeeper
-        image: bitnami/zookeeper:3.9
+        image: soldevelo/zookeeper:3.9
         securityContext:
           runAsUser: 1001
         ports:
@@ -318,7 +318,7 @@ spec:
           mountPath: /bitnami/kafka
       containers:
       - name: kafka
-        image: bitnami/kafka:3.9
+        image: soldevelo/kafka:3.9
         securityContext:
           runAsUser: 1001
         ports:
